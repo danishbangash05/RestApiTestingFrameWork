@@ -1,6 +1,6 @@
 package apitest;
 
-import base.Base;
+import settinguptoken.GettingToken;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.specification.RequestSpecification;
@@ -14,7 +14,7 @@ import java.nio.file.Paths;
 import static io.restassured.RestAssured.given;
 
 @Test
-public class SubmitResourceTest extends Base {
+public class SubmitResourceTest extends GettingToken {
     public void submitTest() throws IOException {
         String token = "Bearer "+ getToken();
         String submitPayload = new String(Files.readAllBytes(Paths.get(System.getProperty("user.dir")+ "/payloads/submit.json")));

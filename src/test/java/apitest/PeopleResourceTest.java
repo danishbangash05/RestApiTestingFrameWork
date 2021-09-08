@@ -1,6 +1,6 @@
 package apitest;
 
-import base.Base;
+import settinguptoken.GettingToken;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import org.testng.Assert;
@@ -10,7 +10,7 @@ import java.io.IOException;
 
 import static io.restassured.RestAssured.given;
 
-public class PeopleResourceTest extends Base {
+public class PeopleResourceTest extends GettingToken {
     @Test
     public void getPeople() throws IOException {
         String url = buildUrl("/test/people") ;

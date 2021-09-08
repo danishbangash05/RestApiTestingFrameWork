@@ -1,4 +1,4 @@
-package base;
+package settinguptoken;
 
 import io.restassured.path.json.JsonPath;
 import okhttp3.*;
@@ -9,9 +9,9 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 
-public class Base {
+public class GettingToken {
     LogManager logManager;
-    public static Logger log = LogManager.getLogger(Base.class.getName());
+    public static Logger log = LogManager.getLogger(GettingToken.class.getName());
 
     public static String hostName = "https://5x9m5ed0tj.execute-api.us-east-1.amazonaws.com";
 

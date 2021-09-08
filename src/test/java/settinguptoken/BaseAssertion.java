@@ -1,4 +1,4 @@
-package base;
+package settinguptoken;
 
 public class BaseAssertion {
 }
